@@ -1,16 +1,11 @@
+
 # collaboration
 
-A new Flutter project.
+#My Folder Structure breakdown
+My folders are split into different folder to have a clean architechture that can be maintainable or scalable.I have different folders for screen,widgets,utils and state management.
 
-## Getting Started
+#State Management
+I implemented Change Notifier Provider.This was instantiated at the root of the app.The CartModel class extends a ChangeNotifier.This is chosen for a small app to share data across screens in the app.The buttons use the provider and listen is set to false.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+#Architecture 
+The model was provided with a mock data since there is no backend service.The UI layers received data from the model created and the controller used is the Change NOtifier
